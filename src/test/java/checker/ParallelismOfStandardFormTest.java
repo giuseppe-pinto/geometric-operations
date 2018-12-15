@@ -23,12 +23,24 @@ public class ParallelismOfStandardFormTest
   }
 
   @Test
-  public void parallelismInFirstQuadrant()
+  public void parallelismForEqualsLine()
   {
     Point a = new Point(2d, 3d);
     Point b = new Point(4d, 6d);
     Point c = new Point(2d, 3d);
     Point d = new Point(4d, 6d);
+
+    assertFalse("Two equals line aren't parallel",checkerParallelism
+      .areParallel(new StandardLine(a, b), new StandardLine(c, d)));
+  }
+
+  @Test
+  public void parallelismInFirstQuadrant()
+  {
+    Point a = new Point(2d, 3d);
+    Point b = new Point(4d, 6d);
+    Point c = new Point(4d, 6d);
+    Point d = new Point(8d, 12d);
 
     assertTrue(checkerParallelism
       .areParallel(new StandardLine(a, b), new StandardLine(c, d)));

@@ -15,9 +15,14 @@ public class CheckerParallelism<T>
 
   public boolean areParallel(T firstLine, T secondLine)
   {
+    if(firstLine.equals(secondLine)){
+      return false;
+    }
+
     Double firstGradient = gradientCalculatorStrategy.calculate(firstLine);
     Double secondGradient = gradientCalculatorStrategy.calculate(secondLine);
     return (!firstGradient.equals(0d) || !secondGradient.equals(0d))
       && Objects.equals(firstGradient, secondGradient);
+
   }
 }
