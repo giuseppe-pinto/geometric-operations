@@ -1,5 +1,7 @@
 package Strategy;
 
+import Strategy.gradient.GradientCalculatorForStandardLine;
+import Strategy.gradient.GradientCalculator;
 import domain.Point;
 import domain.line.StandardLine;
 
@@ -7,10 +9,19 @@ import java.util.Objects;
 
 public class StandardConditionalStrategy implements ConditionalStrategy<StandardLine>
 {
+
+  private final GradientCalculator<StandardLine> gradientCalculator;
+
+  public StandardConditionalStrategy()
+  {
+    this.gradientCalculator = new GradientCalculatorForStandardLine();
+  }
+
   @Override
   public boolean areParallel(StandardLine firstLine, StandardLine secondLine)
   {
-    return Objects.equals(calculateGradient(firstLine), calculateGradient(secondLine));
+    return Objects.equals(gradientCalculator.calculate(firstLine),
+      gradientCalculator.calculate(secondLine));
   }
 
   @Override
@@ -25,10 +36,4 @@ public class StandardConditionalStrategy implements ConditionalStrategy<Standard
     return null;
   }
 
-  private Double calculateGradient(StandardLine line)
-  {
-    double numerator = line.getA().getOrdinate() - line.getB().getOrdinate();
-    double denominator = line.getA().getAbscissa() - line.getB().getAbscissa();
-    return numerator/denominator;
-  }
 }
