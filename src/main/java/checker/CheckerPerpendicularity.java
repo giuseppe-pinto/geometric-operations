@@ -20,8 +20,7 @@ public class CheckerPerpendicularity<T>
 
     return ((firstGradient.isInfinite() && secondGradient.equals(0.0))
       || (secondGradient.isInfinite() && firstGradient.equals(0.0))) ||
-      getProductOfTwoGradient(gradientCalculatorStrategy.calculate(firstLine), gradientCalculatorStrategy.calculate(secondLine))
-        .equals(PRODUCT_OF_GRADIENT_FOR_PERPENDICULARITY);
+      getProductOfTwoGradient(firstGradient, secondGradient).equals(PRODUCT_OF_GRADIENT_FOR_PERPENDICULARITY);
   }
 
   private Double getProductOfTwoGradient(Double firstGradient, Double secondGradient)

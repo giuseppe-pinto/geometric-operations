@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-public class GradientCalculatorStrategyFroStandardLineTest
+public class GradientCalculatorStrategyForStandardLineTest
 {
   private GradientCalculatorStrategy<StandardLine> gradientCalculatorStrategy =
     new GradientCalculatorStrategyStandardLine();

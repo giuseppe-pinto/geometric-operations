@@ -30,7 +30,7 @@ public class ParallelismOfStandardFormTest
     Point c = new Point(2d, 3d);
     Point d = new Point(4d, 6d);
 
-    assertFalse("Two equals line aren't parallel",checkerParallelism
+    assertFalse("A line is not parallel to itself",checkerParallelism
       .areParallel(new StandardLine(a, b), new StandardLine(c, d)));
   }
 

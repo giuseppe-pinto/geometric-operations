@@ -18,7 +18,7 @@ public class GradientCalculatorStrategyStandardLine implements GradientCalculato
     return gradient.isInfinite() ? gradient : roundToScale(gradient);
   }
 
-  private Double roundToScale(Double value) throws NumberFormatException{
+  private Double roundToScale(Double value) {
     return new BigDecimal(value.toString()).setScale(SCALE, HALF_UP).doubleValue();
   }
 
