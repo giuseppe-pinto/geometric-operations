@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59924bd2-271f-4728-861e-ee1334b8f9a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculatorForStandardLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculatorFroGradientInterceptLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/GradientCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/StandardConditionalStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/StandardConditionalStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GradientCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardForm/gradient/GradientCalculatorFroStandardLineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandardForm/ParallelismOfStandardFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardForm/ParallelismOfStandardFormTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -73,16 +67,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="37" />
+          <entry key="Groovy" value="4" />
+          <entry key="JAVA" value="42" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="1" />
+          <entry key="Properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2626" />
-          <entry key="PLAIN_TEXT" value="47" />
+          <entry key="JAVA" value="3162" />
+          <entry key="PLAIN_TEXT" value="105" />
         </counts>
       </usages-collector>
     </session>
@@ -90,10 +84,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/StandardForm/gradient/GradientCalculatorFroStandardLineTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/StandardForm/ParallelismOfStandardFormTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="64" column="74" lean-forward="true" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
+            <state relative-caret-position="513">
+              <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,24 +96,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/StandardConditionalStrategy.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/ConditionalStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/classes/java/main/Strategy/ConditionalContext.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#783#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -134,28 +114,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/ConditionalStrategy.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/StandardConditionalStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculatorForStandardLine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+            <state relative-caret-position="399">
+              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -502,7 +464,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Strategy/StandardConditinalStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/Strategy/ConditionalContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Point.java" />
-        <option value="$PROJECT_DIR$/src/test/java/StandardForm/ParallelismOfStandardFormTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/line/GradientInterscopeLine.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/line/GradientInterceptLine.java" />
         <option value="$PROJECT_DIR$/src/main/java/Strategy/GradientCalculator.java" />
@@ -515,6 +476,7 @@
         <option value="$PROJECT_DIR$/src/test/java/GradientCalculatorFroStandardLineTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculatorForStandardLine.java" />
         <option value="$PROJECT_DIR$/src/test/java/StandardForm/gradient/GradientCalculatorFroStandardLineTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StandardForm/ParallelismOfStandardFormTest.java" />
       </list>
     </option>
   </component>
@@ -565,14 +527,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Strategy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -596,15 +550,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="StandardForm" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="StandardForm" type="462c0819:PsiDirectoryNode" />
-              <item name="gradient" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -618,7 +563,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544868047874" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544869345201" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -654,7 +599,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParallelismOfStandardFormTest">
+  <component name="RunManager" selected="JUnit.ParallelismOfStandardFormTest.parallelismInTwoDifferentQuadrant">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -667,74 +612,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="geometric-operations [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="GradientCalculatorFroStandardLineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="geometric-operations_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="StandardForm.gradient" />
-      <option name="MAIN_CLASS_NAME" value="StandardForm.gradient.GradientCalculatorFroStandardLineTest" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GradientCalculatorFroStandardLineTest.pointWithZeroInAbscissa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="geometric-operations_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StandardForm.gradient.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="StandardForm.gradient" />
-      <option name="MAIN_CLASS_NAME" value="StandardForm.gradient.GradientCalculatorFroStandardLineTest" />
-      <option name="METHOD_NAME" value="pointWithZeroInAbscissa" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GradientCalculatorFroStandardLineTest.pointWithZeroInOrdinate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="geometric-operations_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StandardForm.gradient.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="StandardForm.gradient" />
-      <option name="MAIN_CLASS_NAME" value="StandardForm.gradient.GradientCalculatorFroStandardLineTest" />
-      <option name="METHOD_NAME" value="pointWithZeroInOrdinate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParallelismOfStandardFormTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParallelismOfStandardFormTest.norParallelInThirdQuadrant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="geometric-operations_test" />
       <extension name="coverage">
         <pattern>
@@ -744,6 +622,76 @@
       </extension>
       <option name="PACKAGE_NAME" value="StandardForm" />
       <option name="MAIN_CLASS_NAME" value="StandardForm.ParallelismOfStandardFormTest" />
+      <option name="METHOD_NAME" value="norParallelInThirdQuadrant" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelismOfStandardFormTest.notParallelInFourthQuadrant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="geometric-operations_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StandardForm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StandardForm" />
+      <option name="MAIN_CLASS_NAME" value="StandardForm.ParallelismOfStandardFormTest" />
+      <option name="METHOD_NAME" value="notParallelInFourthQuadrant" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelismOfStandardFormTest.parallelismInFourthQuadrant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="geometric-operations_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StandardForm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StandardForm" />
+      <option name="MAIN_CLASS_NAME" value="StandardForm.ParallelismOfStandardFormTest" />
+      <option name="METHOD_NAME" value="parallelismInFourthQuadrant" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelismOfStandardFormTest.parallelismInThirdQuadrant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="geometric-operations_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StandardForm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StandardForm" />
+      <option name="MAIN_CLASS_NAME" value="StandardForm.ParallelismOfStandardFormTest" />
+      <option name="METHOD_NAME" value="parallelismInThirdQuadrant" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelismOfStandardFormTest.parallelismInTwoDifferentQuadrant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="geometric-operations_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StandardForm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StandardForm" />
+      <option name="MAIN_CLASS_NAME" value="StandardForm.ParallelismOfStandardFormTest" />
+      <option name="METHOD_NAME" value="parallelismInTwoDifferentQuadrant" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -773,19 +721,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GradientCalculatorFroStandardLineTest" />
-      <item itemvalue="JUnit.GradientCalculatorFroStandardLineTest.pointWithZeroInOrdinate" />
-      <item itemvalue="Gradle.geometric-operations [jar]" />
-      <item itemvalue="JUnit.GradientCalculatorFroStandardLineTest.pointWithZeroInAbscissa" />
-      <item itemvalue="JUnit.ParallelismOfStandardFormTest" />
+      <item itemvalue="JUnit.ParallelismOfStandardFormTest.parallelismInThirdQuadrant" />
+      <item itemvalue="JUnit.ParallelismOfStandardFormTest.norParallelInThirdQuadrant" />
+      <item itemvalue="JUnit.ParallelismOfStandardFormTest.parallelismInFourthQuadrant" />
+      <item itemvalue="JUnit.ParallelismOfStandardFormTest.notParallelInFourthQuadrant" />
+      <item itemvalue="JUnit.ParallelismOfStandardFormTest.parallelismInTwoDifferentQuadrant" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParallelismOfStandardFormTest" />
-        <item itemvalue="JUnit.GradientCalculatorFroStandardLineTest" />
-        <item itemvalue="JUnit.GradientCalculatorFroStandardLineTest.pointWithZeroInAbscissa" />
-        <item itemvalue="Gradle.geometric-operations [jar]" />
-        <item itemvalue="JUnit.GradientCalculatorFroStandardLineTest.pointWithZeroInOrdinate" />
+        <item itemvalue="JUnit.ParallelismOfStandardFormTest.parallelismInTwoDifferentQuadrant" />
+        <item itemvalue="JUnit.ParallelismOfStandardFormTest.notParallelInFourthQuadrant" />
+        <item itemvalue="JUnit.ParallelismOfStandardFormTest.parallelismInFourthQuadrant" />
+        <item itemvalue="JUnit.ParallelismOfStandardFormTest.norParallelInThirdQuadrant" />
+        <item itemvalue="JUnit.ParallelismOfStandardFormTest.parallelismInThirdQuadrant" />
       </list>
     </recent_temporary>
   </component>
@@ -800,7 +748,7 @@
       <option name="presentableId" value="Default" />
       <updated>1544811198512</updated>
       <workItem from="1544811202264" duration="8449000" />
-      <workItem from="1544863965984" duration="3717000" />
+      <workItem from="1544863965984" duration="5351000" />
     </task>
     <task id="LOCAL-00001" summary="added git ignore">
       <created>1544811525230</created>
@@ -809,49 +757,56 @@
       <option name="project" value="LOCAL" />
       <updated>1544811525230</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added new logic for Calculate gradient and tests for this">
+      <created>1544868089294</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544868089294</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GradientCalculatorFroStandardLineTest_invalidPointForCalculateGradient - 2018.12.15 at 10h 36m 09s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest.invalidPointForCalculateGradient" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest - 2018.12.15 at 11h 06m 35s.xml">
+      <configuration name="ParallelismOfStandardFormTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GradientCalculatorFroStandardLineTest_invalidPointForCalculateGradient - 2018.12.15 at 10h 38m 00s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest.invalidPointForCalculateGradient" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest - 2018.12.15 at 11h 09m 07s.xml">
+      <configuration name="ParallelismOfStandardFormTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GradientCalculatorFroStandardLineTest_invalidPointForCalculateGradient - 2018.12.15 at 10h 38m 41s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest.invalidPointForCalculateGradient" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest_parallelismInSecondQuadrant - 2018.12.15 at 11h 11m 33s.xml">
+      <configuration name="ParallelismOfStandardFormTest.parallelismInSecondQuadrant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GradientCalculatorFroStandardLineTest_invalidPointForCalculateGradient - 2018.12.15 at 10h 39m 46s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest.invalidPointForCalculateGradient" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest_parallelismInSecondQuadrant - 2018.12.15 at 11h 11m 42s.xml">
+      <configuration name="ParallelismOfStandardFormTest.parallelismInSecondQuadrant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GradientCalculatorFroStandardLineTest_invalidPointForCalculateGradient - 2018.12.15 at 10h 47m 27s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest.invalidPointForCalculateGradient" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest_parallelismOfTwoLinesOnAbscissa - 2018.12.15 at 11h 13m 06s.xml">
+      <configuration name="ParallelismOfStandardFormTest.parallelismOfTwoLinesOnAbscissa" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GradientCalculatorFroStandardLineTest - 2018.12.15 at 10h 48m 08s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest_parallelismInThirdQuadrant - 2018.12.15 at 11h 19m 46s.xml">
+      <configuration name="ParallelismOfStandardFormTest.parallelismInThirdQuadrant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GradientCalculatorFroStandardLineTest - 2018.12.15 at 10h 49m 03s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest_norParallelInThirdQuadrant - 2018.12.15 at 11h 20m 30s.xml">
+      <configuration name="ParallelismOfStandardFormTest.norParallelInThirdQuadrant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GradientCalculatorFroStandardLineTest_pointWithZeroInOrdinate - 2018.12.15 at 10h 50m 32s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest.pointWithZeroInOrdinate" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest_parallelismInFourthQuadrant - 2018.12.15 at 11h 21m 35s.xml">
+      <configuration name="ParallelismOfStandardFormTest.parallelismInFourthQuadrant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GradientCalculatorFroStandardLineTest_pointWithZeroInOrdinate - 2018.12.15 at 10h 52m 02s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest.pointWithZeroInOrdinate" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest_notParallelInFourthQuadrant - 2018.12.15 at 11h 22m 14s.xml">
+      <configuration name="ParallelismOfStandardFormTest.notParallelInFourthQuadrant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GradientCalculatorFroStandardLineTest - 2018.12.15 at 10h 52m 38s.xml">
-      <configuration name="GradientCalculatorFroStandardLineTest" configurationId="JUnit" />
+    <history-entry file="ParallelismOfStandardFormTest_notParallelInFourthQuadrant - 2018.12.15 at 11h 22m 26s.xml">
+      <configuration name="ParallelismOfStandardFormTest.notParallelInFourthQuadrant" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12166000" />
+    <option name="totallyTimeSpent" value="13800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21530758" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21530758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -872,7 +827,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -891,15 +846,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added git ignore" />
+    <MESSAGE value="added new logic for Calculate gradient and tests for this" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new logic for Calculate gradient and tests for this" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitIgnore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -996,30 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StandardForm/ParallelismOfStandardFormTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculatorForStandardLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1041,6 +975,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StandardForm/gradient/GradientCalculatorFroStandardLineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculatorForStandardLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/StandardConditionalStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/ConditionalStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/ConditionalContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1048,27 +1025,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/ConditionalStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/StandardForm/ParallelismOfStandardFormTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Strategy/StandardConditionalStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StandardForm/gradient/GradientCalculatorFroStandardLineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="64" column="74" lean-forward="true" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
+        <state relative-caret-position="513">
+          <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
