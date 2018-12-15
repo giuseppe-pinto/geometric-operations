@@ -1,12 +1,11 @@
-package Strategy.gradient;
+package gradient;
 
 import domain.line.StandardLine;
-
 import java.math.BigDecimal;
 
 import static java.math.RoundingMode.HALF_UP;
 
-public class GradientCalculatorForStandardLine implements GradientCalculator<StandardLine>
+public class GradientCalculatorStrategyStandardLine implements GradientCalculatorStrategy<StandardLine>
 {
   private static final int SCALE = 3;
 
@@ -16,7 +15,7 @@ public class GradientCalculatorForStandardLine implements GradientCalculator<Sta
     Double numerator = line.getA().getOrdinate() - line.getB().getOrdinate();
     Double denominator = line.getA().getAbscissa() - line.getB().getAbscissa();
     Double gradient = numerator / denominator;
-    return roundToScale(gradient);
+    return gradient.isInfinite() ? gradient : roundToScale(gradient);
   }
 
   private Double roundToScale(Double value) throws NumberFormatException{
