@@ -17,24 +17,25 @@ public class IncidentPointCalculatorGradientInterceptorTest
 {
 
   private IncidentPointCalculator<GradientInterceptLine> incidentPointCalculator;
-  private CheckerIncidence<GradientInterceptLine> checkerIncidence;
-  private GradientCalculatorStrategy<GradientInterceptLine> gradientCalculator;
-  private YInterceptorCalculator<GradientInterceptLine> yInterceptorCalculator;
 
   @Before
   public void setUp()
   {
-    gradientCalculator = new GradientCalculatorStrategyGradientInterceptLine();
-    checkerIncidence = new CheckerIncidence<>(gradientCalculator);
-    yInterceptorCalculator = new YInterceptorCalculatorGradientInterceptor();
-    incidentPointCalculator = new IncidentPointCalculatorGradientInterceptorLine(
+    GradientCalculatorStrategy<GradientInterceptLine> gradientCalculator =
+      new GradientCalculatorStrategyGradientInterceptLine();
+    CheckerIncidence<GradientInterceptLine> checkerIncidence =
+      new CheckerIncidence<>(gradientCalculator);
+    YInterceptorCalculator<GradientInterceptLine> yInterceptorCalculator =
+      new YInterceptorCalculatorGradientInterceptor();
+
+    incidentPointCalculator = new IncidentPointCalculator<>(
       checkerIncidence,
       yInterceptorCalculator,
       gradientCalculator);
   }
 
   @Test
-  public void interceptorInFirstQuadrant()
+  public void incidentPointInFirstQuadrant()
   {
     GradientInterceptLine firstLine = new GradientInterceptLine(1.0,0d);
     GradientInterceptLine secondLine = new GradientInterceptLine(-2.0,3.0);
@@ -42,7 +43,7 @@ public class IncidentPointCalculatorGradientInterceptorTest
   }
 
   @Test
-  public void interceptorInFourthQuadrant()
+  public void incidentPointInFourthQuadrant()
   {
     GradientInterceptLine firstLine = new GradientInterceptLine(-1.0/4,-3.0/2);
     GradientInterceptLine secondLine = new GradientInterceptLine(-1.0/2.0,1.0);
@@ -50,7 +51,7 @@ public class IncidentPointCalculatorGradientInterceptorTest
   }
 
   @Test(expected = RuntimeException.class)
-  public void interceptorForParallelLines()
+  public void incidentPointForParallelLines()
   {
     GradientInterceptLine firstLine = new GradientInterceptLine(5.0,0d);
     GradientInterceptLine secondLine = new GradientInterceptLine(5.0,3.0);
@@ -58,12 +59,18 @@ public class IncidentPointCalculatorGradientInterceptorTest
   }
 
   @Test
-  public void interceptorOnAbscissa()
+  public void incidentPointOnAbscissa()
   {
     GradientInterceptLine firstLine = new GradientInterceptLine(1.0,1.0);
     GradientInterceptLine secondLine = new GradientInterceptLine(-2.0,-2.0);
     assertThat(incidentPointCalculator.calculate(firstLine,secondLine), is(new Point(-1.0, 0.0)));
   }
 
-
+  @Test(expected = RuntimeException.class)
+  public void incidentPointForLinesWithNullGradient()
+  {
+    GradientInterceptLine firstLine = new GradientInterceptLine(null,0.0);
+    GradientInterceptLine secondLine = new GradientInterceptLine(null,-2.0);
+    assertThat(incidentPointCalculator.calculate(firstLine,secondLine), is(new Point(-1.0, 0.0)));
+  }
 }
