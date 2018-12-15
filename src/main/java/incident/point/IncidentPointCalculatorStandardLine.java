@@ -3,12 +3,16 @@ package incident.point;
 import checker.CheckerIncidence;
 import domain.Point;
 import domain.line.StandardLine;
+import gradient.GradientCalculatorStrategy;
+import interceptor.YInterceptorCalculator;
 
 public class IncidentPointCalculatorStandardLine extends IncidentPointCalculator<StandardLine>
 {
-  public IncidentPointCalculatorStandardLine(CheckerIncidence<StandardLine> checkerIncidence)
+  public IncidentPointCalculatorStandardLine(CheckerIncidence<StandardLine> checkerIncidence,
+                                             YInterceptorCalculator<StandardLine> interceptorCalculator,
+                                             GradientCalculatorStrategy<StandardLine> gradientCalculatorStrategy)
   {
-    super(checkerIncidence);
+    super(checkerIncidence, interceptorCalculator, gradientCalculatorStrategy);
   }
 
   @Override

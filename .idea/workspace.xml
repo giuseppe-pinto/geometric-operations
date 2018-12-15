@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59924bd2-271f-4728-861e-ee1334b8f9a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/checker/CheckerIncidence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorStandardLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorGradientInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorStandard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/checker/IncidenceOfStandardFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gradient/GradientCalculatorStrategyForGradientInterceptLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/interceptor/YInterceptorCalculatorForGradientInterceptorLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/interceptor/YInterceptorCalculatorForStandardLineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/incident/point/DeltaCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorGradientInterceptorLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/incident/point/IncidentPointCalculatorGradientInterceptorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/checker/CheckerPerpendicularity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/checker/CheckerPerpendicularity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gradient/GradientCalculatorStrategyStandardLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gradient/GradientCalculatorStrategyStandardLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/checker/ParallelismOfStandardFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/checker/ParallelismOfStandardFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gradient/GradientCalculatorStrategyFroStandardLineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gradient/GradientCalculatorStrategyForStandardLineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorStandardLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorStandardLine.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -40,6 +31,9 @@
     <SUITE FILE_PATH="coverage/geometric_operations$PerpendicularityOfStandardFormTest_perpendicularityInFirstQuadrant.ic" NAME="PerpendicularityOfStandardFormTest.perpendicularityInFirstQuadrant Coverage Results" MODIFIED="1544870491622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>StandardForm.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/geometric_operations$YInterceptorCalculatorForGradientInterceptorLine.ic" NAME="YInterceptorCalculatorForGradientInterceptorLine Coverage Results" MODIFIED="1544904554922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>interceptor.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/geometric_operations$GradientCalculatorStrategyForGradientInterceptLine.ic" NAME="GradientCalculatorStrategyForGradientInterceptLine Coverage Results" MODIFIED="1544902060369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gradient.*</FILTER>
     </SUITE>
@@ -48,7 +42,7 @@
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="291" />
+    <option name="myElementSize" value="327" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -120,14 +114,14 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="114" />
+          <entry key="JAVA" value="136" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7062" />
+          <entry key="JAVA" value="8371" />
           <entry key="PLAIN_TEXT" value="149" />
         </counts>
       </usages-collector>
@@ -138,11 +132,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/checker/ParallelismOfStandardFormTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="42" column="33" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="42" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/interceptor/YInterceptorCalculatorForStandardLineTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/incident/point/IncidentPointCalculatorGradientInterceptorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+            <state relative-caret-position="241">
+              <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,35 +157,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorStandard.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorGradientInterceptorLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+            <state relative-caret-position="69">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#971#972#0" expanded="true" />
-                <element signature="e#1295#1296#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
+                <element signature="e#1310#1311#0" expanded="true" />
+                <element signature="e#1338#1339#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorStandardLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="285">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gradient/GradientCalculatorStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="327" selection-start-line="327" selection-end-line="327" />
+            <state relative-caret-position="38">
+              <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gradient/GradientCalculatorStrategyStandardLine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="22" column="3" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="22" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -512,10 +533,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/domain/Point.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/line/GradientInterscopeLine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/line/GradientInterceptLine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Strategy/GradientCalculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Strategy/GradientCalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculatorFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/Strategy/gradient/GradientCalculatorNew.java" />
@@ -549,7 +566,6 @@
         <option value="$PROJECT_DIR$/src/test/java/checker/IncidenceOfStandardFormTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/incidend/point/IncidentPointCalculatorStandardLine.java" />
         <option value="$PROJECT_DIR$/src/main/java/incidend/point/IncidentPointCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/interceptor/YinterceptorStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/interceptor/YinterceptorCalculatorStrategyStandard.java" />
         <option value="$PROJECT_DIR$/src/main/java/interceptor/YinterceptorCalculatorStrategyGradientInterceptor.java" />
@@ -559,10 +575,15 @@
         <option value="$PROJECT_DIR$/src/test/java/gradient/GradientCalculatorStrategyForGradientInterceptLine.java" />
         <option value="$PROJECT_DIR$/src/test/java/interceptor/YInterceptorCalculatorForGradientInterceptorLine.java" />
         <option value="$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorGradientInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/gradient/GradientCalculatorStrategyStandardLine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorStandard.java" />
         <option value="$PROJECT_DIR$/src/test/java/interceptor/YInterceptorCalculatorForStandardLineTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorStandard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorGradientInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorStandardLine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/incident/point/DeltaCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorGradientInterceptorLine.java" />
+        <option value="$PROJECT_DIR$/src/test/java/incident/point/IncidentPointCalculatorGradientInterceptorTest.java" />
       </list>
     </option>
   </component>
@@ -594,17 +615,6 @@
             <path>
               <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
               <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -619,6 +629,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="checker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
@@ -640,14 +658,6 @@
               <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
               <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -656,6 +666,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="checker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
@@ -664,6 +682,14 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gradient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="point" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
@@ -684,7 +710,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544904531524" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544911025420" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -721,7 +747,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.YInterceptorCalculatorForGradientInterceptorLine">
+  <component name="RunManager" selected="JUnit.IncidentPointCalculatorGradientInterceptorTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -730,6 +756,53 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncidenceOfStandardFormTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="geometric-operations_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="checker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="checker" />
+      <option name="MAIN_CLASS_NAME" value="checker.IncidenceOfStandardFormTest" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncidentPointCalculatorGradientInterceptorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="geometric-operations_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="incident.point.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="incident.point" />
+      <option name="MAIN_CLASS_NAME" value="incident.point.IncidentPointCalculatorGradientInterceptorTest" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncidentPointCalculatorGradientInterceptorTest.interceptorInFirstQuadrant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="geometric-operations_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="incident.point.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="incident.point" />
+      <option name="MAIN_CLASS_NAME" value="incident.point.IncidentPointCalculatorGradientInterceptorTest" />
+      <option name="METHOD_NAME" value="interceptorInFirstQuadrant" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -764,57 +837,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="YInterceptorCalculatorForStandardLineTest.lineWithoutInterceptor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="geometric-operations_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interceptor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="interceptor" />
-      <option name="MAIN_CLASS_NAME" value="interceptor.YInterceptorCalculatorForStandardLineTest" />
-      <option name="METHOD_NAME" value="lineWithoutInterceptor" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="YInterceptorCalculatorForStandardLineTest.negativeInterceptor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="geometric-operations_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interceptor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="interceptor" />
-      <option name="MAIN_CLASS_NAME" value="interceptor.YInterceptorCalculatorForStandardLineTest" />
-      <option name="METHOD_NAME" value="negativeInterceptor" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="YInterceptorCalculatorForStandardLineTest.positiveInterceptor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="geometric-operations_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interceptor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="interceptor" />
-      <option name="MAIN_CLASS_NAME" value="interceptor.YInterceptorCalculatorForStandardLineTest" />
-      <option name="METHOD_NAME" value="positiveInterceptor" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -841,17 +863,17 @@
     <list>
       <item itemvalue="JUnit.YInterceptorCalculatorForGradientInterceptorLine" />
       <item itemvalue="JUnit.YInterceptorCalculatorForStandardLineTest" />
-      <item itemvalue="JUnit.YInterceptorCalculatorForStandardLineTest.positiveInterceptor" />
-      <item itemvalue="JUnit.YInterceptorCalculatorForStandardLineTest.negativeInterceptor" />
-      <item itemvalue="JUnit.YInterceptorCalculatorForStandardLineTest.lineWithoutInterceptor" />
+      <item itemvalue="JUnit.IncidenceOfStandardFormTest" />
+      <item itemvalue="JUnit.IncidentPointCalculatorGradientInterceptorTest" />
+      <item itemvalue="JUnit.IncidentPointCalculatorGradientInterceptorTest.interceptorInFirstQuadrant" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IncidentPointCalculatorGradientInterceptorTest" />
+        <item itemvalue="JUnit.IncidentPointCalculatorGradientInterceptorTest.interceptorInFirstQuadrant" />
+        <item itemvalue="JUnit.IncidenceOfStandardFormTest" />
         <item itemvalue="JUnit.YInterceptorCalculatorForGradientInterceptorLine" />
         <item itemvalue="JUnit.YInterceptorCalculatorForStandardLineTest" />
-        <item itemvalue="JUnit.YInterceptorCalculatorForStandardLineTest.lineWithoutInterceptor" />
-        <item itemvalue="JUnit.YInterceptorCalculatorForStandardLineTest.negativeInterceptor" />
-        <item itemvalue="JUnit.YInterceptorCalculatorForStandardLineTest.positiveInterceptor" />
       </list>
     </recent_temporary>
   </component>
@@ -867,7 +889,7 @@
       <updated>1544811198512</updated>
       <workItem from="1544811202264" duration="8449000" />
       <workItem from="1544863965984" duration="15944000" />
-      <workItem from="1544896497196" duration="6157000" />
+      <workItem from="1544896497196" duration="10863000" />
     </task>
     <task id="LOCAL-00001" summary="added git ignore">
       <created>1544811525230</created>
@@ -887,45 +909,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="YInterceptorCalculatorForGradientInterceptorLine - 2018.12.15 at 20h 32m 15s.xml">
-      <configuration name="YInterceptorCalculatorForGradientInterceptorLine" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YInterceptorCalculatorForStandardLineTest - 2018.12.15 at 20h 47m 17s.xml">
-      <configuration name="YInterceptorCalculatorForStandardLineTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YInterceptorCalculatorForStandardLineTest_positiveInterceptor - 2018.12.15 at 20h 49m 20s.xml">
-      <configuration name="YInterceptorCalculatorForStandardLineTest.positiveInterceptor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YInterceptorCalculatorForStandardLineTest - 2018.12.15 at 20h 52m 46s.xml">
-      <configuration name="YInterceptorCalculatorForStandardLineTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YInterceptorCalculatorForStandardLineTest_positiveInterceptor - 2018.12.15 at 20h 52m 55s.xml">
-      <configuration name="YInterceptorCalculatorForStandardLineTest.positiveInterceptor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YInterceptorCalculatorForStandardLineTest_negativeInterceptor - 2018.12.15 at 20h 56m 05s.xml">
-      <configuration name="YInterceptorCalculatorForStandardLineTest.negativeInterceptor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YInterceptorCalculatorForStandardLineTest - 2018.12.15 at 20h 56m 51s.xml">
-      <configuration name="YInterceptorCalculatorForStandardLineTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YInterceptorCalculatorForStandardLineTest_lineWithoutInterceptor - 2018.12.15 at 20h 57m 42s.xml">
-      <configuration name="YInterceptorCalculatorForStandardLineTest.lineWithoutInterceptor" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="YInterceptorCalculatorForStandardLineTest_lineWithoutInterceptor - 2018.12.15 at 20h 58m 29s.xml">
       <configuration name="YInterceptorCalculatorForStandardLineTest.lineWithoutInterceptor" configurationId="JUnit" />
     </history-entry>
     <history-entry file="YInterceptorCalculatorForStandardLineTest - 2018.12.15 at 21h 04m 36s.xml">
       <configuration name="YInterceptorCalculatorForStandardLineTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="YInterceptorCalculatorForStandardLineTest - 2018.12.15 at 21h 06m 53s.xml">
+      <configuration name="YInterceptorCalculatorForStandardLineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="YInterceptorCalculatorForStandardLineTest - 2018.12.15 at 21h 08m 53s.xml">
+      <configuration name="YInterceptorCalculatorForStandardLineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="YInterceptorCalculatorForGradientInterceptorLine - 2018.12.15 at 21h 09m 16s.xml">
+      <configuration name="YInterceptorCalculatorForGradientInterceptorLine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IncidentPointCalculatorGradientInterceptorTest - 2018.12.15 at 22h 12m 12s.xml">
+      <configuration name="IncidentPointCalculatorGradientInterceptorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IncidentPointCalculatorGradientInterceptorTest_interceptorInFirstQuadrant - 2018.12.15 at 22h 44m 50s.xml">
+      <configuration name="IncidentPointCalculatorGradientInterceptorTest.interceptorInFirstQuadrant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IncidentPointCalculatorGradientInterceptorTest_interceptorInFirstQuadrant - 2018.12.15 at 22h 49m 22s.xml">
+      <configuration name="IncidentPointCalculatorGradientInterceptorTest.interceptorInFirstQuadrant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IncidentPointCalculatorGradientInterceptorTest - 2018.12.15 at 22h 51m 22s.xml">
+      <configuration name="IncidentPointCalculatorGradientInterceptorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IncidentPointCalculatorGradientInterceptorTest - 2018.12.15 at 22h 53m 48s.xml">
+      <configuration name="IncidentPointCalculatorGradientInterceptorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30550000" />
+    <option name="totallyTimeSpent" value="35256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993804" visible="true" weight="0.2360515" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993804" visible="true" weight="0.21745351" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -958,12 +980,12 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29899856" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993804" visible="true" weight="0.30615166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Favorites" order="5" sideWeight="0.5006196" side_tool="true" weight="0.29899856" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961586" />
@@ -975,7 +997,7 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.32961586" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32961586" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32961586" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.45064378" />
@@ -1127,16 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/checker/ParallelismOfStandardFormTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/checker/PerpendicularityOfStandardFormTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1154,38 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/checker/IncidenceOfStandardFormTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/checker/CheckerIncidence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorStandardLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/checker/CheckerParallelism.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1193,27 +1173,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gradient/GradientCalculatorStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1237,13 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gradient/GradientCalculatorStrategyGradientInterceptLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1252,6 +1204,104 @@
             <element signature="e#254#255#0" expanded="true" />
             <element signature="e#289#290#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/interceptor/YInterceptorCalculatorForStandardLineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/interceptor/YInterceptorCalculatorForGradientInterceptorLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorStandard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorGradientInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checker/CheckerIncidence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/checker/IncidenceOfStandardFormTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/incident/point/DeltaCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gradient/GradientCalculatorStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1265,61 +1315,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorGradientInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorStandardLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/interceptor/YInterceptorCalculatorForGradientInterceptorLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/incident/point/IncidentPointCalculatorGradientInterceptorLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="327" selection-start-line="327" selection-end-line="327" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/YInterceptorCalculatorStandard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        <state relative-caret-position="69">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#1338#1339#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/interceptor/YInterceptorCalculatorForStandardLineTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/checker/ParallelismOfStandardFormTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+        <state relative-caret-position="245">
+          <caret line="42" column="33" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="42" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/incident/point/IncidentPointCalculatorGradientInterceptorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
