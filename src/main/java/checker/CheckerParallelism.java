@@ -14,7 +14,9 @@ public class CheckerParallelism
 
     Double firstGradient = firstLine.calculateGradient();
     Double secondGradient = secondLine.calculateGradient();
-    return areNotCoincident(firstGradient, secondGradient) && Objects.equals(firstGradient, secondGradient);
+
+    return areNotCoincident(firstGradient, secondGradient)
+      && Objects.equals(firstGradient, secondGradient);
   }
 
   private boolean areNotCoincident(Double firstGradient, Double secondGradient)

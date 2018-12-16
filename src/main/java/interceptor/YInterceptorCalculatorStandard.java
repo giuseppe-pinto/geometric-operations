@@ -19,7 +19,7 @@ public class YInterceptorCalculatorStandard implements YInterceptorCalculator<St
   }
 
   @Override
-  public Double calculate(StandardLine line) throws YInterceptorException
+  public Double calculate(StandardLine line)
   {
     Double gradient = gradientCalculatorStrategyStandardLine.calculate(line);
     if (gradient.isInfinite()) throw new YInterceptorException("the line does not intersect y axis");
@@ -35,7 +35,7 @@ public class YInterceptorCalculatorStandard implements YInterceptorCalculator<St
     return new BigDecimal(value.toString()).setScale(SCALE, HALF_UP).doubleValue();
   }
 
-  private class YInterceptorException extends RuntimeException
+  private class YInterceptorException extends IllegalArgumentException
   {
     public YInterceptorException(String message)
     {

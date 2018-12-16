@@ -24,16 +24,13 @@ public class IncidentPointCalculator
     return checkerIncidence;
   }
 
-  public Point calculate(Line firstLine, Line secondLine) throws RuntimeException
+  public Point calculate(Line firstLine, Line secondLine)
   {
     Double firstGradient = firstLine.calculateGradient();
     Double secondGradient = secondLine.calculateGradient();
 
-    if(firstGradient == null || secondGradient == null)
-      throw new RuntimeException("The two lines aren't incident");
-
     if(!getCheckerIncidence().areIncident(firstLine,secondLine))
-      throw new RuntimeException("The two lines aren't incident");
+      throw new IncidentPointCalculatorException("The two lines aren't incident");
 
     Double firstA = (-1) * firstGradient;
     Double B = 1.0;
@@ -51,5 +48,13 @@ public class IncidentPointCalculator
 
   private Double roundToScale(Double value) {
     return new BigDecimal(value.toString()).setScale(SCALE, HALF_UP).doubleValue();
+  }
+
+  private class IncidentPointCalculatorException extends IllegalArgumentException
+  {
+    public IncidentPointCalculatorException(String s)
+    {
+      super(s);
+    }
   }
 }

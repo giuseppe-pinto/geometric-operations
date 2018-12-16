@@ -153,4 +153,26 @@ public class ParallelismOfStandardFormTest
         .areParallel(new StandardLine(a, b), new StandardLine(c, d)));
   }
 
+  @Test(expected = IllegalArgumentException.class)
+  public void parallelismForNullValueBofAPoint()
+  {
+    Point a = new Point(2d, 3d);
+    Point b = new Point(4d, 6d);
+    Point c = new Point(4d, 6d);
+    Point d = new Point(8d, null);
+
+    checkerParallelism.areParallel(new StandardLine(a, b), new StandardLine(c, d));
+  }
+
+  @Test(expected = IllegalArgumentException.class)
+  public void parallelismForNullPoint()
+  {
+    Point a = new Point(2d, 3d);
+    Point b = new Point(4d, 6d);
+    Point c = new Point(4d, 6d);
+    Point d = null;
+
+    checkerParallelism.areParallel(new StandardLine(a, b), new StandardLine(c, d));
+  }
+
 }

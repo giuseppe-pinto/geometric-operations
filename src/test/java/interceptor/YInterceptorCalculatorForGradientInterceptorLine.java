@@ -4,7 +4,6 @@ import domain.line.GradientInterceptLine;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 
 public class YInterceptorCalculatorForGradientInterceptorLine
@@ -25,10 +24,10 @@ public class YInterceptorCalculatorForGradientInterceptorLine
     assertThat(yInterceptorCalculator.calculate(new GradientInterceptLine(20.0, -53.0)), is(-53.0));
   }
 
-  @Test
+  @Test(expected = IllegalArgumentException.class)
   public void nullIntercept()
   {
-    assertNull(yInterceptorCalculator.calculate(new GradientInterceptLine(20.0, null)));
+    yInterceptorCalculator.calculate(new GradientInterceptLine(20.0, null));
   }
 
   @Test
@@ -36,4 +35,5 @@ public class YInterceptorCalculatorForGradientInterceptorLine
   {
     assertThat(yInterceptorCalculator.calculate(new GradientInterceptLine(20.0, 0d)), is(0.0));
   }
+
 }

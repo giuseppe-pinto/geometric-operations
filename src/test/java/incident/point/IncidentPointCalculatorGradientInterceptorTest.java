@@ -53,11 +53,11 @@ public class IncidentPointCalculatorGradientInterceptorTest
     assertThat(incidentPointCalculator.calculate(firstLine,secondLine), is(new Point(-1.0, 0.0)));
   }
 
-  @Test(expected = RuntimeException.class)
+  @Test(expected = IllegalArgumentException.class)
   public void incidentPointForLinesWithNullGradient()
   {
     GradientInterceptLine firstLine = new GradientInterceptLine(null,0.0);
     GradientInterceptLine secondLine = new GradientInterceptLine(null,-2.0);
-    assertThat(incidentPointCalculator.calculate(firstLine,secondLine), is(new Point(-1.0, 0.0)));
+    incidentPointCalculator.calculate(firstLine,secondLine);
   }
 }
