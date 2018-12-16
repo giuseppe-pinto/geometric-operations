@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59924bd2-271f-4728-861e-ee1334b8f9a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/incident/point/IncidentPointForMixLineTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/incident/point/IncidentPointCalculatorStandardLineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/incident/point/IncidentPointCalculatorStandardLineTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -115,7 +113,7 @@
         <counts>
           <entry key="Groovy" value="4" />
           <entry key="JAVA" value="12623" />
-          <entry key="PLAIN_TEXT" value="157" />
+          <entry key="PLAIN_TEXT" value="207" />
         </counts>
       </usages-collector>
     </session>
@@ -152,8 +150,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/incident/point/IncidentPointCalculatorStandardLineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="114">
+              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -584,79 +582,6 @@
               <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
               <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="checker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="line" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gradient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="point" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geometric-operations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geometric-operations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -668,7 +593,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544965788317" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544968585226" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -705,7 +630,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IncidentPointForMixLineTest.nullValueForGradient">
+  <component name="RunManager" selected="Gradle.geometric-operations [build]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -717,6 +642,24 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="geometric-operations [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
     </configuration>
     <configuration name="IncidentPointForMixLineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="geometric-operations_test" />
@@ -744,23 +687,6 @@
       <option name="PACKAGE_NAME" value="incident.point" />
       <option name="MAIN_CLASS_NAME" value="incident.point.IncidentPointForMixLineTest" />
       <option name="METHOD_NAME" value="checkIncidentAndPoint" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IncidentPointForMixLineTest.incidentPointForParallelLines" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="geometric-operations_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="incident.point.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="incident.point" />
-      <option name="MAIN_CLASS_NAME" value="incident.point.IncidentPointForMixLineTest" />
-      <option name="METHOD_NAME" value="incidentPointForParallelLines" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -826,18 +752,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.IncidentPointForMixLineTest" />
-      <item itemvalue="JUnit.IncidentPointForMixLineTest.incidentPointForParallelLines" />
       <item itemvalue="JUnit.IncidentPointForMixLineTest.checkIncidentAndPoint" />
       <item itemvalue="JUnit.IncidentPointForMixLineTest.nullValueForAPoint" />
       <item itemvalue="JUnit.IncidentPointForMixLineTest.nullValueForGradient" />
+      <item itemvalue="Gradle.geometric-operations [build]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.geometric-operations [build]" />
         <item itemvalue="JUnit.IncidentPointForMixLineTest.nullValueForGradient" />
         <item itemvalue="JUnit.IncidentPointForMixLineTest.nullValueForAPoint" />
         <item itemvalue="JUnit.IncidentPointForMixLineTest" />
         <item itemvalue="JUnit.IncidentPointForMixLineTest.checkIncidentAndPoint" />
-        <item itemvalue="JUnit.IncidentPointForMixLineTest.incidentPointForParallelLines" />
       </list>
     </recent_temporary>
   </component>
@@ -853,7 +779,7 @@
       <updated>1544811198512</updated>
       <workItem from="1544811202264" duration="8449000" />
       <workItem from="1544863965984" duration="15944000" />
-      <workItem from="1544896497196" duration="27788000" />
+      <workItem from="1544896497196" duration="27910000" />
     </task>
     <task id="LOCAL-00001" summary="added git ignore">
       <created>1544811525230</created>
@@ -869,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544868089294</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added test for Mix line and incident point">
+      <created>1544965910670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544965910670</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -905,7 +838,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52181000" />
+    <option name="totallyTimeSpent" value="52303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -995,7 +928,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added git ignore" />
     <MESSAGE value="added new logic for Calculate gradient and tests for this" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new logic for Calculate gradient and tests for this" />
+    <MESSAGE value="added test for Mix line and incident point" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test for Mix line and incident point" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1449,8 +1383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/incident/point/IncidentPointCalculatorStandardLineTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="114">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
