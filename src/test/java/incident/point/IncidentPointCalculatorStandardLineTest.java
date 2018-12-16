@@ -45,7 +45,7 @@ public class IncidentPointCalculatorStandardLineTest
       .calculate(new StandardLine(a,b), new StandardLine(c,d)), is(new Point(10.0,-4.0)));
   }
 
-  @Test(expected = RuntimeException.class)
+  @Test(expected = IllegalArgumentException.class)
   public void incidentPointForParallelLines()
   {
     Point a = new Point(2d, 3d);
