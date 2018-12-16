@@ -2,9 +2,6 @@ package checker;
 
 import domain.Point;
 import domain.line.StandardLine;
-import gradient.GradientCalculatorStrategy;
-import gradient.GradientCalculatorStrategyStandardLine;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -12,15 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 public class IncidenceOfStandardFormTest
 {
-  private CheckerIncidence<StandardLine> checkerIncidence;
-
-  @Before
-  public void setUp()
-  {
-    GradientCalculatorStrategy<StandardLine> gradientCalculatorStrategy =
-      new GradientCalculatorStrategyStandardLine();
-    checkerIncidence = new CheckerIncidence<>(gradientCalculatorStrategy);
-  }
+  private CheckerIncidence checkerIncidence = new CheckerIncidence();
 
   @Test
   public void incidenceOfTwoLines()

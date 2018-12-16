@@ -1,10 +1,7 @@
 package checker;
 
-import gradient.GradientCalculatorStrategy;
-import gradient.GradientCalculatorStrategyStandardLine;
 import domain.Point;
 import domain.line.StandardLine;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -12,15 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 public class PerpendicularityOfStandardFormTest
 {
-  CheckerPerpendicularity<StandardLine> checkerPerpendicularity;
-
-  @Before
-  public void setUp()
-  {
-    GradientCalculatorStrategy<StandardLine> standardLineGradientCalculatorStrategy =
-      new GradientCalculatorStrategyStandardLine();
-    checkerPerpendicularity = new CheckerPerpendicularity<>(standardLineGradientCalculatorStrategy);
-  }
+  CheckerPerpendicularity checkerPerpendicularity = new CheckerPerpendicularity();
 
   @Test
   public void perpendicularityInFirstQuadrant()

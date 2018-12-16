@@ -1,16 +1,26 @@
 package domain.line;
 
+import gradient.GradientCalculator;
+import gradient.GradientCalculatorStrategyGradientInterceptLine;
+import interceptor.YInterceptorCalculator;
+import interceptor.YInterceptorCalculatorGradientInterceptor;
+
 import java.util.Objects;
 
-public class GradientInterceptLine
+public class GradientInterceptLine implements Line
 {
   private final Double gradient;
   private final Double yIntercept;
+  private final GradientCalculator<GradientInterceptLine> gradientCalculator;
+  private final YInterceptorCalculator<GradientInterceptLine> yInterceptorCalculator;
 
-  public GradientInterceptLine(Double gradient, Double yIntercept)
+  public GradientInterceptLine(Double gradient,
+                               Double yIntercept)
   {
     this.gradient = gradient;
     this.yIntercept = yIntercept;
+    this.gradientCalculator = new GradientCalculatorStrategyGradientInterceptLine();
+    this.yInterceptorCalculator = new YInterceptorCalculatorGradientInterceptor();
   }
 
   public Double getGradient()
@@ -21,6 +31,18 @@ public class GradientInterceptLine
   public Double getyIntercept()
   {
     return yIntercept;
+  }
+
+  @Override
+  public Double calculateGradient()
+  {
+    return this.gradientCalculator.calculate(this);
+  }
+
+  @Override
+  public Double calculateYInterceptor()
+  {
+    return this.yInterceptorCalculator.calculate(this);
   }
 
   @Override
@@ -53,4 +75,5 @@ public class GradientInterceptLine
       ", yIntercept=" + yIntercept +
       '}';
   }
+
 }

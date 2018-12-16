@@ -10,24 +10,24 @@ import static org.junit.Assert.assertThat;
 public class GradientCalculatorStrategyForGradientInterceptLine
 {
 
-  private GradientCalculatorStrategy<GradientInterceptLine>
-    gradientCalculatorStrategy = new GradientCalculatorStrategyGradientInterceptLine();
+  private GradientCalculator<GradientInterceptLine>
+    gradientCalculator = new GradientCalculatorStrategyGradientInterceptLine();
 
   @Test
   public void calculatePositiveGradient()
   {
-    assertThat(gradientCalculatorStrategy.calculate(new GradientInterceptLine(20.0,0.1)), is(20.0));
+    assertThat(gradientCalculator.calculate(new GradientInterceptLine(20.0,0.1)), is(20.0));
   }
 
   @Test
   public void calculateGradientNull()
   {
-    assertNull(gradientCalculatorStrategy.calculate(new GradientInterceptLine(null,0.1)));
+    assertNull(gradientCalculator.calculate(new GradientInterceptLine(null,0.1)));
   }
 
   @Test
   public void calculateNegativeGradient()
   {
-    assertThat(gradientCalculatorStrategy.calculate(new GradientInterceptLine(-20.0,0.1)), is(-20.0));
+    assertThat(gradientCalculator.calculate(new GradientInterceptLine(-20.0,0.1)), is(-20.0));
   }
 }

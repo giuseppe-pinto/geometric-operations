@@ -1,6 +1,6 @@
 package gradient;
 
-public interface GradientCalculatorStrategy<T>
+public interface GradientCalculator<T>
 {
   Double calculate(T line);
 }

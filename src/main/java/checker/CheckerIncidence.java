@@ -1,20 +1,13 @@
 package checker;
 
-import gradient.GradientCalculatorStrategy;
+import domain.line.Line;
 
 import java.util.Objects;
 
-public class CheckerIncidence<T>
+public class CheckerIncidence
 {
-  private GradientCalculatorStrategy<T> gradientCalculatorStrategy;
-
-  public CheckerIncidence(GradientCalculatorStrategy<T> gradientCalculatorStrategy)
-  {
-    this.gradientCalculatorStrategy = gradientCalculatorStrategy;
-  }
-
-  public boolean areIncident(T firstLine, T secondLine){
-    return !Objects.equals(gradientCalculatorStrategy.calculate(firstLine),
-      gradientCalculatorStrategy.calculate(secondLine));
+  public boolean areIncident(Line firstLine, Line secondLine){
+    return !Objects.equals(firstLine.calculateGradient(),
+      secondLine.calculateGradient());
   }
 }

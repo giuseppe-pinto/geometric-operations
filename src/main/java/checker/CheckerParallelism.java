@@ -1,28 +1,24 @@
 package checker;
 
-import gradient.GradientCalculatorStrategy;
+import domain.line.Line;
 
 import java.util.Objects;
 
-public class CheckerParallelism<T>
+public class CheckerParallelism
 {
-  private GradientCalculatorStrategy<T> gradientCalculatorStrategy;
-
-  public CheckerParallelism(GradientCalculatorStrategy<T> gradientCalculatorStrategy)
-  {
-    this.gradientCalculatorStrategy = gradientCalculatorStrategy;
-  }
-
-  public boolean areParallel(T firstLine, T secondLine)
+  public boolean areParallel(Line firstLine, Line secondLine)
   {
     if(firstLine.equals(secondLine)){
       return false;
     }
 
-    Double firstGradient = gradientCalculatorStrategy.calculate(firstLine);
-    Double secondGradient = gradientCalculatorStrategy.calculate(secondLine);
-    return (!firstGradient.equals(0d) || !secondGradient.equals(0d))
-      && Objects.equals(firstGradient, secondGradient);
+    Double firstGradient = firstLine.calculateGradient();
+    Double secondGradient = secondLine.calculateGradient();
+    return areNotCoincident(firstGradient, secondGradient) && Objects.equals(firstGradient, secondGradient);
+  }
 
+  private boolean areNotCoincident(Double firstGradient, Double secondGradient)
+  {
+    return !firstGradient.equals(0d) || !secondGradient.equals(0d);
   }
 }

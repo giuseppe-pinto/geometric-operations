@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 
 import static java.math.RoundingMode.HALF_UP;
 
-public class GradientCalculatorStrategyStandardLine implements GradientCalculatorStrategy<StandardLine>
+public class GradientCalculatorStandardLine implements GradientCalculator<StandardLine>
 {
   private static final int SCALE = 3;
 

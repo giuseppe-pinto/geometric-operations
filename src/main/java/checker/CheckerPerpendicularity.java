@@ -1,26 +1,23 @@
 package checker;
 
-import gradient.GradientCalculatorStrategy;
+import domain.line.Line;
 
-public class CheckerPerpendicularity<T>
+public class CheckerPerpendicularity
 {
   private static final Double PRODUCT_OF_GRADIENT_FOR_PERPENDICULARITY = -1d;
 
-  private GradientCalculatorStrategy<T> gradientCalculatorStrategy;
-
-  public CheckerPerpendicularity(GradientCalculatorStrategy<T> gradientCalculatorStrategy)
+  public boolean arePerpendicular(Line firstLine, Line secondLine)
   {
-    this.gradientCalculatorStrategy = gradientCalculatorStrategy;
+    Double firstGradient = firstLine.calculateGradient();
+    Double secondGradient = secondLine.calculateGradient();
+
+    return areOrthogonal(firstGradient, secondGradient) || getProductOfTwoGradient(firstGradient, secondGradient).equals(PRODUCT_OF_GRADIENT_FOR_PERPENDICULARITY);
   }
 
-  public boolean arePerpendicular(T firstLine, T secondLine)
+  private boolean areOrthogonal(Double firstGradient, Double secondGradient)
   {
-    Double firstGradient = gradientCalculatorStrategy.calculate(firstLine);
-    Double secondGradient = gradientCalculatorStrategy.calculate(secondLine);
-
-    return ((firstGradient.isInfinite() && secondGradient.equals(0.0))
-      || (secondGradient.isInfinite() && firstGradient.equals(0.0))) ||
-      getProductOfTwoGradient(firstGradient, secondGradient).equals(PRODUCT_OF_GRADIENT_FOR_PERPENDICULARITY);
+    return (firstGradient.isInfinite() && secondGradient.equals(0.0))
+      || (secondGradient.isInfinite() && firstGradient.equals(0.0));
   }
 
   private Double getProductOfTwoGradient(Double firstGradient, Double secondGradient)

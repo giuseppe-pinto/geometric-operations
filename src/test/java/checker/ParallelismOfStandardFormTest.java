@@ -1,10 +1,7 @@
 package checker;
 
-import gradient.GradientCalculatorStrategy;
-import gradient.GradientCalculatorStrategyStandardLine;
 import domain.Point;
 import domain.line.StandardLine;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -12,15 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 public class ParallelismOfStandardFormTest
 {
-  private CheckerParallelism<StandardLine> checkerParallelism;
-
-  @Before
-  public void setUp()
-  {
-    GradientCalculatorStrategy<StandardLine> gradientCalculatorStrategy =
-      new GradientCalculatorStrategyStandardLine();
-    checkerParallelism = new CheckerParallelism<>(gradientCalculatorStrategy);
-  }
+  private CheckerParallelism checkerParallelism = new CheckerParallelism();
 
   @Test
   public void parallelismForEqualsLine()
@@ -137,8 +126,7 @@ public class ParallelismOfStandardFormTest
     Point b = new Point(4d, 0d);
     Point c = new Point(2.2d, 0d);
     Point d = new Point(4.2d, 0d);
-    assertFalse("Two parallel line are never incident",
-      checkerParallelism.areParallel(new StandardLine(a, b), new StandardLine(c, d)));
+    assertFalse(checkerParallelism.areParallel(new StandardLine(a, b), new StandardLine(c, d)));
   }
 
   @Test

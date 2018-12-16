@@ -1,19 +1,27 @@
 package domain.line;
 
 import domain.Point;
+import gradient.GradientCalculator;
+import gradient.GradientCalculatorStandardLine;
+import interceptor.YInterceptorCalculator;
+import interceptor.YInterceptorCalculatorStandard;
 
 import java.util.Objects;
 
-public class StandardLine
+public class StandardLine implements Line
 {
-
   private final Point a;
   private final Point b;
+  private final GradientCalculator<StandardLine> calculatorGradient;
+  private final YInterceptorCalculator<StandardLine> yInterceptorCalculator;
 
-  public StandardLine(Point a, Point b)
+  public StandardLine(Point a,
+                      Point b)
   {
     this.a = a;
     this.b = b;
+    this.calculatorGradient = new GradientCalculatorStandardLine();
+    this.yInterceptorCalculator = new YInterceptorCalculatorStandard();
   }
 
   public Point getA()
@@ -24,6 +32,18 @@ public class StandardLine
   public Point getB()
   {
     return b;
+  }
+
+  @Override
+  public Double calculateGradient()
+  {
+    return this.calculatorGradient.calculate(this);
+  }
+
+  @Override
+  public Double calculateYInterceptor()
+  {
+    return this.yInterceptorCalculator.calculate(this);
   }
 
   @Override

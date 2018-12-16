@@ -3,10 +3,6 @@ package incident.point;
 import checker.CheckerIncidence;
 import domain.Point;
 import domain.line.StandardLine;
-import gradient.GradientCalculatorStrategy;
-import gradient.GradientCalculatorStrategyStandardLine;
-import interceptor.YInterceptorCalculator;
-import interceptor.YInterceptorCalculatorStandard;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,22 +12,13 @@ import static org.junit.Assert.assertThat;
 public class IncidentPointCalculatorStandardLineTest
 {
 
-  private IncidentPointCalculator<StandardLine> incidentPointCalculator;
+  private IncidentPointCalculator incidentPointCalculator;
 
   @Before
   public void setUp()
   {
-    GradientCalculatorStrategy<StandardLine> gradientCalculator =
-      new GradientCalculatorStrategyStandardLine();
-    CheckerIncidence<StandardLine> checkerIncidence =
-      new CheckerIncidence<>(gradientCalculator);
-    YInterceptorCalculator<StandardLine> yInterceptorCalculator =
-      new YInterceptorCalculatorStandard();
-
-    incidentPointCalculator = new IncidentPointCalculator<>(
-      checkerIncidence,
-      yInterceptorCalculator,
-      gradientCalculator);
+    CheckerIncidence checkerIncidence = new CheckerIncidence();
+    incidentPointCalculator = new IncidentPointCalculator(checkerIncidence);
   }
 
   @Test

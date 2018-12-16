@@ -7,17 +7,17 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-public class GradientCalculatorStrategyForStandardLineTest
+public class GradientCalculatorForStandardLineTest
 {
-  private GradientCalculatorStrategy<StandardLine> gradientCalculatorStrategy =
-    new GradientCalculatorStrategyStandardLine();
+  private GradientCalculator<StandardLine> gradientCalculator =
+    new GradientCalculatorStandardLine();
 
   @Test
   public void calculateGradientInFirstQuadrant()
   {
     Point a = new Point(2d, 2d);
     Point b = new Point(4d, 4d);
-    assertThat(gradientCalculatorStrategy.calculate(new StandardLine(a,b)), is(1d));
+    assertThat(gradientCalculator.calculate(new StandardLine(a,b)), is(1d));
   }
 
   @Test
@@ -25,7 +25,7 @@ public class GradientCalculatorStrategyForStandardLineTest
   {
     Point a = new Point(2d, 3d);
     Point b = new Point(-4d, 1.5d);
-    assertThat(gradientCalculatorStrategy.calculate(new StandardLine(a,b)), is(0.25));
+    assertThat(gradientCalculator.calculate(new StandardLine(a,b)), is(0.25));
   }
 
   @Test
@@ -34,7 +34,7 @@ public class GradientCalculatorStrategyForStandardLineTest
     Point a = new Point(-2.2d, -3d);
     Point b = new Point(-4d, -1.5d);
 
-    assertThat(gradientCalculatorStrategy.calculate(new StandardLine(a,b)), is(-0.833));
+    assertThat(gradientCalculator.calculate(new StandardLine(a,b)), is(-0.833));
   }
 
   @Test
@@ -43,7 +43,7 @@ public class GradientCalculatorStrategyForStandardLineTest
     Point a = new Point(0.2d, -0.1d);
     Point b = new Point(4.3d, -3.5d);
 
-    assertThat(gradientCalculatorStrategy.calculate(new StandardLine(a,b)), is(-0.829));
+    assertThat(gradientCalculator.calculate(new StandardLine(a,b)), is(-0.829));
   }
 
   @Test
@@ -52,7 +52,7 @@ public class GradientCalculatorStrategyForStandardLineTest
     Point a = new Point(1d, 0d);
     Point b = new Point(2d, 0d);
 
-    assertThat(gradientCalculatorStrategy.calculate(new StandardLine(a,b)), is(0d));
+    assertThat(gradientCalculator.calculate(new StandardLine(a,b)), is(0d));
   }
 
   @Test
@@ -61,6 +61,6 @@ public class GradientCalculatorStrategyForStandardLineTest
     Point a = new Point(0d, -0.1d);
     Point b = new Point(0d, -3.5d);
 
-    assertThat(gradientCalculatorStrategy.calculate(new StandardLine(a,b)), is(Double.POSITIVE_INFINITY));
+    assertThat(gradientCalculator.calculate(new StandardLine(a,b)), is(Double.POSITIVE_INFINITY));
   }
 }

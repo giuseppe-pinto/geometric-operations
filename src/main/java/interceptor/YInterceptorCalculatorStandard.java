@@ -1,7 +1,7 @@
 package interceptor;
 
 import domain.line.StandardLine;
-import gradient.GradientCalculatorStrategyStandardLine;
+import gradient.GradientCalculatorStandardLine;
 
 import java.math.BigDecimal;
 
@@ -11,11 +11,11 @@ public class YInterceptorCalculatorStandard implements YInterceptorCalculator<St
 {
   private static final int SCALE = 2;
 
-  private final GradientCalculatorStrategyStandardLine gradientCalculatorStrategyStandardLine;
+  private final GradientCalculatorStandardLine gradientCalculatorStrategyStandardLine;
 
   public YInterceptorCalculatorStandard()
   {
-    this.gradientCalculatorStrategyStandardLine = new GradientCalculatorStrategyStandardLine();
+    this.gradientCalculatorStrategyStandardLine = new GradientCalculatorStandardLine();
   }
 
   @Override

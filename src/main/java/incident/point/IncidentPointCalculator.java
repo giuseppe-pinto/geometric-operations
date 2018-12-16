@@ -2,48 +2,32 @@ package incident.point;
 
 import checker.CheckerIncidence;
 import domain.Point;
-import gradient.GradientCalculatorStrategy;
-import interceptor.YInterceptorCalculator;
+import domain.line.Line;
 
 import java.math.BigDecimal;
 
 import static java.math.RoundingMode.HALF_UP;
 
-public class IncidentPointCalculator<T>
+public class IncidentPointCalculator
 {
   private static final int SCALE = 2;
-  private final CheckerIncidence<T> checkerIncidence;
-  private final YInterceptorCalculator<T> interceptorCalculator;
-  private final GradientCalculatorStrategy<T> gradientCalculatorStrategy;
 
-  public IncidentPointCalculator(CheckerIncidence<T> checkerIncidence,
-                                 YInterceptorCalculator<T> interceptorCalculator,
-                                 GradientCalculatorStrategy<T> gradientCalculatorStrategy)
+  private final CheckerIncidence checkerIncidence;
+
+  public IncidentPointCalculator(CheckerIncidence checkerIncidence)
   {
     this.checkerIncidence = checkerIncidence;
-    this.interceptorCalculator = interceptorCalculator;
-    this.gradientCalculatorStrategy = gradientCalculatorStrategy;
   }
 
-  public CheckerIncidence<T> getCheckerIncidence()
+  public CheckerIncidence getCheckerIncidence()
   {
     return checkerIncidence;
   }
 
-  public YInterceptorCalculator<T> getInterceptorCalculator()
+  public Point calculate(Line firstLine, Line secondLine) throws RuntimeException
   {
-    return interceptorCalculator;
-  }
-
-  public GradientCalculatorStrategy<T> getGradientCalculatorStrategy()
-  {
-    return gradientCalculatorStrategy;
-  }
-
-  public Point calculate(T firstLine, T secondLine) throws RuntimeException
-  {
-    Double firstGradient = getGradientCalculatorStrategy().calculate(firstLine);
-    Double secondGradient = getGradientCalculatorStrategy().calculate(secondLine);
+    Double firstGradient = firstLine.calculateGradient();
+    Double secondGradient = secondLine.calculateGradient();
 
     if(firstGradient == null || secondGradient == null)
       throw new RuntimeException("The two lines aren't incident");
@@ -53,9 +37,9 @@ public class IncidentPointCalculator<T>
 
     Double firstA = (-1) * firstGradient;
     Double B = 1.0;
-    Double firstC = getInterceptorCalculator().calculate(firstLine);
+    Double firstC = firstLine.calculateYInterceptor();
     Double secondA = (-1) * secondGradient;
-    Double secondC = getInterceptorCalculator().calculate(secondLine);
+    Double secondC = secondLine.calculateYInterceptor();
 
     Double delta = firstA * B - B * secondA;
 
